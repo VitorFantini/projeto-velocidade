@@ -1,0 +1,31 @@
+# === Ambiente Virtual e Dependências ===
+.venv/
+venv/
+ENV/
+dist/
+build/
+
+# === Caches do Python e do VS Code ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+
+# === Datasets e Arquivos de Mídia Pesados ===
+# (Evita estourar o limite de tamanho do GitHub)
+dataset_veiculos/
+*.avi
+*.mkv
+*.zip
+*.tar.gz
+*.mp4
+
+# === YOLO / Ultralytics ===
+# Ignora arquivos de log e pesos temporários, mas mantém o seu modelo oficial
+runs/detect/treino_velocidade_oficial/weights/last.pt
+runs/detect/treino_velocidade_oficial/*.jpg
+runs/detect/treino_velocidade_oficial/*.png
+runs/detect/treino_velocidade_oficial/*.csv
