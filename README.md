@@ -46,3 +46,39 @@ projeto-velocidade/
 ├── Road-traffic.mp4               # Vídeo de teste em alta resolução (amostra leve)
 ├── pyproject.toml                 # Configuração de dependências do Poetry
 └── README.md                      # Documentação do projeto
+```
+## 🛠️ Como Instalar e Rodar o Projeto
+
+Este projeto utiliza o **Poetry** para o gerenciamento de ambiente virtual e dependências, garantindo que o código rode perfeitamente em qualquer máquina sem conflitos de biblioteca.
+
+### Pré-requisitos:
+* Python 3.10 ou superior
+* Poetry instalado (`pip install poetry`)
+
+### Passo a Passo:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/VitorFantini/projeto-velocidade.git](https://github.com/VitorFantini/projeto-velocidade.git)
+   cd projeto-velocidade
+   ```
+
+   Instale as dependências e isole o ambiente:
+
+```Bash
+poetry install
+Este comando lerá o arquivo pyproject.toml e criará um ambiente virtual isolado com as versões exatas do PyTorch, OpenCV e Ultralytics utilizadas no desenvolvimento.
+```
+Ative o ambiente virtual:
+
+```Bash
+poetry shell
+Execute o Projeto:
+```
+Abra o VS Code:
+
+```Bash
+code .
+Abra o arquivo notebooks/velocimetro_virtual.ipynb.
+```
+Escolha o Kernel do ambiente virtual do Poetry (.venv) no canto superior direito do VS Code e clique em Run All (Executar Tudo).
